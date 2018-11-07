@@ -1,0 +1,16 @@
+def fibonnaci(num):
+    '''(int) ->list
+    Write a program that asks the user how many Fibonnaci numbers to generate and then generates them. 
+    The sequence looks like this: 1, 1, 2, 3, 5, 8, 13, …
+    '''
+    
+    lst = []
+    
+    a = 0
+    b = 1
+    
+    for i in range(num):
+        lst.append(b)
+        a, b = b, a+b
+        
+    return lst
